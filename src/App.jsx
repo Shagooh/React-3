@@ -1,4 +1,4 @@
-import baseColaboradores from "./data/Colaboradores";
+import BaseColaboradores from "./data/Colaboradores";
 import Buscador from "./components/Buscador";
 import FormAlert from "./components/Alert";
 import Formulario from "./components/Formulario";
@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   const [errores, setErrores] = useState(false);
   const [exito, setExito] = useState("");
-  const [listColaboradores, setListColaboradores] = useState(baseColaboradores);
+  const [listColaboradores, setListColaboradores] = useState(BaseColaboradores);
   const [formValue, setFormValue] = useState({
     name: "", email: "", age: "", position: "", phone: ""
   });
